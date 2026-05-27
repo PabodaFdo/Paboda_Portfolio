@@ -22,30 +22,14 @@ const cvLink =
   "/cv/Paboda_Sathsarani_CV.pdf";
 
 export default function BottomNav() {
-  const [visible, setVisible] = useState(false);
+  const [showNav, setShowNav] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
   const itemRefs = useRef({});
 
   useEffect(() => {
-    const aboutSection = document.querySelector("#about");
-
-    const observer = new IntersectionObserver(
-      ([entry]) => setVisible(entry.isIntersecting),
-      {
-        threshold: 0.12,
-        rootMargin: "0px 0px -20% 0px"
-      }
-    );
-
-    if (aboutSection) {
-      observer.observe(aboutSection);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
     const handleScroll = () => {
+      setShowNav(window.scrollY > 120);
+
       const sections = Array.from(document.querySelectorAll("section, #hero"));
       let current = "hero";
 
@@ -79,7 +63,7 @@ export default function BottomNav() {
 
   return (
     <div
-      className={`bottom-nav ${visible ? "bottom-nav-visible" : ""}`}
+      className={`bottom-nav ${showNav ? "bottom-nav-visible" : ""}`}
       aria-label="Mobile navigation"
     >
       <div className="bottom-nav-shell">

@@ -107,7 +107,7 @@ body {
   left: 0;
   right: 0;
   height: 90px;
-  z-index: 1000;
+  z-index: 1300;
   background: rgba(244, 248, 255, 0.78);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid transparent;
@@ -303,6 +303,10 @@ body {
 }
 
 @media (max-width: 980px) {
+  body {
+    padding-bottom: 86px;
+  }
+
   .nav-inner {
     padding: 0 1.2rem;
   }
@@ -323,7 +327,7 @@ body {
     left: 0.75rem;
     right: 0.75rem;
     bottom: 0.75rem;
-    z-index: 900;
+    z-index: 1200;
     transform: translateY(140%);
     opacity: 0;
     pointer-events: none;
