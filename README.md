@@ -9,7 +9,7 @@ I am a third-year BSc (Hons) Information Technology undergraduate at SLIIT, spec
 ## Live Portfolio
 
 Portfolio Link:  
-`Add your deployed portfolio link here`
+https://paboda-portfolio.vercel.app/
 
 ## Features
 
