@@ -16,8 +16,6 @@ export default function Contact() {
       </div>
 
       <div className="glass contact-clean-card reveal">
-        <h3>Get In Touch</h3>
-
         <p>
           Whether you have an opportunity, a project idea, or just want to say
           hello, my inbox is always open. I&apos;ll do my best to get back to

@@ -11,15 +11,6 @@ const education = [
     badges: ["Data Science", "Machine Learning", "Software Development", "IEEE Member"]
   },
   {
-    title: "IEEE Student Member",
-    institution: "Institute of Electrical and Electronics Engineers (IEEE)",
-    period: "2026 — Present",
-    location: "Student Membership",
-    description:
-      "Active student member of IEEE, supporting continuous learning, professional development, and engagement with technology-focused communities.",
-    badges: ["IEEE", "Student Member", "Professional Growth"]
-  },
-  {
     title: "G.C.E Advanced Level (A/L) — Physical Science Stream",
     institution: "Panadura Balika Maha Vidyalaya",
     period: "2020 — 2023",

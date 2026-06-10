@@ -1,7 +1,27 @@
+import { useState } from "react";
 import { motion } from "motion/react";
 import { ExternalLink, Image as ImageIcon } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
 import { projects } from "../data/projects";
+
+function ProjectImage({ project }) {
+  const [imageFailed, setImageFailed] = useState(false);
+  const shouldShowPlaceholder = !project.image || imageFailed;
+
+  return shouldShowPlaceholder ? (
+    <div className="featured-project-placeholder">
+      <ImageIcon size={34} />
+      <span>Project Preview Coming Soon</span>
+    </div>
+  ) : (
+    <img
+      src={project.image}
+      alt={`${project.title} preview`}
+      className="featured-project-image"
+      onError={() => setImageFailed(true)}
+    />
+  );
+}
 
 export default function Projects() {
   return (
@@ -38,18 +58,7 @@ export default function Projects() {
                 className="featured-project-image-link"
               >
                 <div className="featured-project-image-wrap">
-                  {project.image ? (
-                    <img
-                      src={project.image}
-                      alt={`${project.title} preview`}
-                      className="featured-project-image"
-                    />
-                  ) : (
-                    <div className="featured-project-placeholder">
-                      <ImageIcon size={34} />
-                      <span>{project.title}</span>
-                    </div>
-                  )}
+                  <ProjectImage project={project} />
                 </div>
               </a>
 

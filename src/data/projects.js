@@ -74,5 +74,16 @@ export const projects = [
       "A modern personal portfolio website built to showcase skills, projects, education, GitHub profile, and contact details with a clean animated interface.",
     tags: ["HTML5", "CSS3", "JavaScript"],
     link: "https://github.com/PabodaFdo/Paboda_Portfolio"
+  },
+  {
+    id: 7,
+    type: "AI / STUDY",
+    badge: "AI / STUDY",
+    title: "StudyPluse AI",
+    description:
+      "An AI-powered study assistant platform designed to help students manage learning materials, generate summaries, organize study progress, and improve productivity through intelligent academic support features.",
+    image: "/project-images/studypluse-ai.png",
+    tags: ["React", "FastAPI", "Python", "AI", "Machine Learning", "REST API"],
+    link: "https://github.com/PabodaFdo/StudyPluse_AI.git"
   }
 ];
