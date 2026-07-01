@@ -40,7 +40,7 @@ export const projects = [
     description:
       "A secure online voting system for award nominations with voter authentication, admin controls, and real-time result handling for institutional use.",
     tags: ["React", "Spring Boot", "H2", "REST API"],
-    link: "https://github.com/PabodaFdo/Web-based-Voting-System-for-Award-Nominations"
+    link: "https://github.com/PabodaFdo/web-voting-system"
   },
   {
     id: 4,
