@@ -92,10 +92,11 @@ export default function Projects() {
                   </a>
 
                   <a
-                    href={project.link}
+                    href={project.liveDemo || project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`${project.title} open repository`}
+                    title={project.liveDemo ? "View Live" : "View Repository"}
+                    aria-label={project.liveDemo ? `${project.title} live demo` : `${project.title} open repository`}
                   >
                     <ExternalLink size={20} />
                   </a>
